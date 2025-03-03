@@ -2,5 +2,7 @@ const changeBtn = document.getElementById('btn');
 const text = document.getElementById('text');
 
 changeBtn.addEventListener('click', () => {
-	text.textContent = 'ボタンがクリックされました！';
+	setTimeout( () => {
+		text.textContent = 'ボタンがクリックされました！';
+	}, 2000);	
 });
